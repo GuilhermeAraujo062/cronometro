@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
     <title>Cronometro</title>
 </head>
 <body>
-    <div>
-        <div>
-            <span id="hor">00</span> :
-            <span id="min">00</span> :
-            <span id="seg">00</span>
+    <main>
+        <div class="cronometro">
+            <h1 class="titulo">Cronômetro</h1>
+            <h1 class="watch" id="watch">00:00:00</h1>
+            <div class="btn">
+                <div><button class="botao start" id="istart">Iniciar</button></div>
+                <div><button class="botao pause" id="ipause">Pausar</button></div>
+                <div><button class="botao reset" id="ireset">Reiniciar</button></div>
+            </div>
         </div>
-        <button id="start">Iniciar</button>
-        <button id="pause">Pausar</button>
-        <button id="reset">Reiniciar</button>
-    </div>
+    </main>
 
     <script src="js/script.js"></script>
 </body>
